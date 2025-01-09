@@ -1,12 +1,52 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "E:\\MicroserviceProject\\MicroserviceProject\\MicroserviceProject\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9AAE3FCC-617C-4346-A40E-9C61C98F88BE}|..\\UserService\\UserService.csproj|e:\\microserviceproject\\microserviceproject\\userservice\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AAE3FCC-617C-4346-A40E-9C61C98F88BE}|..\\UserService\\UserService.csproj|e:\\microserviceproject\\microserviceproject\\userservice\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "E:\\MicroserviceProject\\MicroserviceProject\\UserService\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "..\\UserService\\Controllers\\UserController.cs",
+              "ToolTip": "E:\\MicroserviceProject\\MicroserviceProject\\UserService\\Controllers\\UserController.cs",
+              "RelativeToolTip": "..\\UserService\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T19:41:47.957Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "User.cs",
+              "DocumentMoniker": "E:\\MicroserviceProject\\MicroserviceProject\\UserService\\Models\\User.cs",
+              "RelativeDocumentMoniker": "..\\UserService\\Models\\User.cs",
+              "ToolTip": "E:\\MicroserviceProject\\MicroserviceProject\\UserService\\Models\\User.cs",
+              "RelativeToolTip": "..\\UserService\\Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T19:41:04.37Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("MicroserviceProject")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("UserService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2b0f8c2f46131d1fcd69426133cceda4ce91c4a8")]
-[assembly: System.Reflection.AssemblyProductAttribute("MicroserviceProject")]
-[assembly: System.Reflection.AssemblyTitleAttribute("MicroserviceProject")]
+[assembly: System.Reflection.AssemblyProductAttribute("UserService")]
+[assembly: System.Reflection.AssemblyTitleAttribute("UserService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // MSBuild WriteCodeFragment sınıfı tarafından oluşturuldu.
