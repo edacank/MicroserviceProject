@@ -3,10 +3,20 @@
   "WorkspaceRootPath": "E:\\MicroserviceProject\\MicroserviceProject\\MicroserviceProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9AAE3FCC-617C-4346-A40E-9C61C98F88BE}|..\\UserService\\UserService.csproj|e:\\microserviceproject\\microserviceproject\\userservice\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9AAE3FCC-617C-4346-A40E-9C61C98F88BE}|..\\UserService\\UserService.csproj|e:\\microserviceproject\\microserviceproject\\userservice\\data\\userdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AAE3FCC-617C-4346-A40E-9C61C98F88BE}|..\\UserService\\UserService.csproj|e:\\microserviceproject\\microserviceproject\\userservice\\userservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9AAE3FCC-617C-4346-A40E-9C61C98F88BE}|..\\UserService\\UserService.csproj|e:\\microserviceproject\\microserviceproject\\userservice\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{554B747F-3F1C-4105-BFA8-CC59C59BD9D2}|MicroserviceProject.csproj|e:\\microserviceproject\\microserviceproject\\microserviceproject\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{554B747F-3F1C-4105-BFA8-CC59C59BD9D2}|MicroserviceProject.csproj|solutionrelative:weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AAE3FCC-617C-4346-A40E-9C61C98F88BE}|..\\UserService\\UserService.csproj|e:\\microserviceproject\\microserviceproject\\userservice\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,6 +31,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "UserDbContext.cs",
+              "DocumentMoniker": "E:\\MicroserviceProject\\MicroserviceProject\\UserService\\Data\\UserDbContext.cs",
+              "RelativeDocumentMoniker": "..\\UserService\\Data\\UserDbContext.cs",
+              "ToolTip": "E:\\MicroserviceProject\\MicroserviceProject\\UserService\\Data\\UserDbContext.cs",
+              "RelativeToolTip": "..\\UserService\\Data\\UserDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T10:32:37.991Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserService",
+              "DocumentMoniker": "E:\\MicroserviceProject\\MicroserviceProject\\UserService\\UserService.csproj",
+              "RelativeDocumentMoniker": "..\\UserService\\UserService.csproj",
+              "ToolTip": "E:\\MicroserviceProject\\MicroserviceProject\\UserService\\UserService.csproj",
+              "RelativeToolTip": "..\\UserService\\UserService.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-11T10:31:52.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "E:\\MicroserviceProject\\MicroserviceProject\\MicroserviceProject\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "WeatherForecast.cs",
+              "ToolTip": "E:\\MicroserviceProject\\MicroserviceProject\\MicroserviceProject\\WeatherForecast.cs",
+              "RelativeToolTip": "WeatherForecast.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T10:21:15.173Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "UserController.cs",
               "DocumentMoniker": "E:\\MicroserviceProject\\MicroserviceProject\\UserService\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "..\\UserService\\Controllers\\UserController.cs",
@@ -33,13 +82,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "User.cs",
               "DocumentMoniker": "E:\\MicroserviceProject\\MicroserviceProject\\UserService\\Models\\User.cs",
               "RelativeDocumentMoniker": "..\\UserService\\Models\\User.cs",
               "ToolTip": "E:\\MicroserviceProject\\MicroserviceProject\\UserService\\Models\\User.cs",
               "RelativeToolTip": "..\\UserService\\Models\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-09T19:41:04.37Z",
               "EditorCaption": ""
