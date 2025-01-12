@@ -3,19 +3,22 @@
   "WorkspaceRootPath": "E:\\MicroserviceProject\\MicroserviceProject\\MicroserviceProject\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9AAE3FCC-617C-4346-A40E-9C61C98F88BE}|..\\UserService\\UserService.csproj|e:\\microserviceproject\\microserviceproject\\userservice\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AAE3FCC-617C-4346-A40E-9C61C98F88BE}|..\\UserService\\UserService.csproj|e:\\microserviceproject\\microserviceproject\\userservice\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AAE3FCC-617C-4346-A40E-9C61C98F88BE}|..\\UserService\\UserService.csproj|e:\\microserviceproject\\microserviceproject\\userservice\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9AAE3FCC-617C-4346-A40E-9C61C98F88BE}|..\\UserService\\UserService.csproj|e:\\microserviceproject\\microserviceproject\\userservice\\data\\userdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9AAE3FCC-617C-4346-A40E-9C61C98F88BE}|..\\UserService\\UserService.csproj|e:\\microserviceproject\\microserviceproject\\userservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9AAE3FCC-617C-4346-A40E-9C61C98F88BE}|..\\UserService\\UserService.csproj|e:\\microserviceproject\\microserviceproject\\userservice\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9AAE3FCC-617C-4346-A40E-9C61C98F88BE}|..\\UserService\\UserService.csproj|e:\\microserviceproject\\microserviceproject\\userservice\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9AAE3FCC-617C-4346-A40E-9C61C98F88BE}|..\\UserService\\UserService.csproj|e:\\microserviceproject\\microserviceproject\\userservice\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -29,7 +32,20 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
+              "Title": "Role.cs",
+              "DocumentMoniker": "E:\\MicroserviceProject\\MicroserviceProject\\UserService\\Models\\Role.cs",
+              "RelativeDocumentMoniker": "..\\UserService\\Models\\Role.cs",
+              "ToolTip": "E:\\MicroserviceProject\\MicroserviceProject\\UserService\\Models\\Role.cs",
+              "RelativeToolTip": "..\\UserService\\Models\\Role.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T13:48:58.581Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "E:\\MicroserviceProject\\MicroserviceProject\\UserService\\appsettings.Development.json",
               "RelativeDocumentMoniker": "..\\UserService\\appsettings.Development.json",
@@ -37,12 +53,11 @@
               "RelativeToolTip": "..\\UserService\\appsettings.Development.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-12T11:41:05.712Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-12T11:41:05.712Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\MicroserviceProject\\MicroserviceProject\\UserService\\Program.cs",
               "RelativeDocumentMoniker": "..\\UserService\\Program.cs",
@@ -50,12 +65,11 @@
               "RelativeToolTip": "..\\UserService\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-12T11:35:44.834Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-12T11:35:44.834Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "UserController.cs",
               "DocumentMoniker": "E:\\MicroserviceProject\\MicroserviceProject\\UserService\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "..\\UserService\\Controllers\\UserController.cs",
@@ -68,26 +82,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "UserDbContext.cs",
               "DocumentMoniker": "E:\\MicroserviceProject\\MicroserviceProject\\UserService\\Data\\UserDbContext.cs",
               "RelativeDocumentMoniker": "..\\UserService\\Data\\UserDbContext.cs",
               "ToolTip": "E:\\MicroserviceProject\\MicroserviceProject\\UserService\\Data\\UserDbContext.cs",
               "RelativeToolTip": "..\\UserService\\Data\\UserDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABIAAAA",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAACAAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-12T11:17:39.96Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "User.cs",
               "DocumentMoniker": "E:\\MicroserviceProject\\MicroserviceProject\\UserService\\Models\\User.cs",
               "RelativeDocumentMoniker": "..\\UserService\\Models\\User.cs",
               "ToolTip": "E:\\MicroserviceProject\\MicroserviceProject\\UserService\\Models\\User.cs",
               "RelativeToolTip": "..\\UserService\\Models\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAsAAAA",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAAA8AAABLAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-09T19:41:04.37Z",
               "EditorCaption": ""

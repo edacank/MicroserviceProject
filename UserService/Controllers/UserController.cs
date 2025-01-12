@@ -7,6 +7,7 @@ using System.Text;
 using UserService.Data;
 using UserService.Models;
 using BCrypt.Net;
+using System.Linq;
 
 namespace UserService.Controllers
 {
@@ -31,7 +32,7 @@ namespace UserService.Controllers
             }
 
             // Şifreyi hashle ve kullanıcıyı ekle
-            user.Password = BCrypt.Net.BCrypt.HashPassword(user.Password);
+            user.PasswordHash = BCrypt.Net.BCrypt.HashPassword(user.PasswordHash);
             _context.Users.Add(user);
             await _context.SaveChangesAsync();
 
@@ -43,7 +44,7 @@ namespace UserService.Controllers
         public async Task<IActionResult> Login([FromBody] User loginRequest)
         {
             var user = await _context.Users.FirstOrDefaultAsync(u => u.UserName == loginRequest.UserName);
-            if (user == null || !BCrypt.Net.BCrypt.Verify(loginRequest.Password, user.Password))
+            if (user == null || !BCrypt.Net.BCrypt.Verify(loginRequest.PasswordHash, user.PasswordHash))
             {
                 return Unauthorized("Geçersiz kullanıcı adı veya şifre.");
             }
@@ -69,9 +70,9 @@ namespace UserService.Controllers
 
             user.UserName = updatedUser.UserName;
             user.Role = updatedUser.Role;
-            if (!string.IsNullOrEmpty(updatedUser.Password))
+            if (!string.IsNullOrEmpty(updatedUser.PasswordHash))
             {
-                user.Password = BCrypt.Net.BCrypt.HashPassword(updatedUser.Password);
+                user.PasswordHash = BCrypt.Net.BCrypt.HashPassword(updatedUser.PasswordHash);
             }
 
             await _context.SaveChangesAsync();
@@ -96,11 +97,11 @@ namespace UserService.Controllers
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("BuCokGucluBirGizliAnahtar"));
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
-            var claims = new[]
-            {
-            new Claim(ClaimTypes.Name, user.UserName),
-            new Claim(ClaimTypes.Role, user.Role)
-        };
+            var claims = new List<Claim>
+{
+            new Claim(ClaimTypes.Name, user.UserName)
+};
+            claims.AddRange(user.Roles.Select(role => new Claim(ClaimTypes.Role, role.RoleName)));
 
             var token = new JwtSecurityToken(
                 issuer: "yourdomain.com",
