@@ -17,7 +17,7 @@ namespace UserService.Data
             //    .IsUnique(); // Kullanıcı adının benzersiz olmasını sağla
             // User - Role İlişkisi
             modelBuilder.Entity<User>()
-                .HasOne(u => u.Role)
+                .HasOne(u => u.Roles)
                 .WithMany(r => r.Users)
                 .HasForeignKey(u => u.RoleId);
 

@@ -98,9 +98,9 @@ namespace UserService.Controllers
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
             var claims = new List<Claim>
-{
+            {
             new Claim(ClaimTypes.Name, user.UserName)
-};
+            };
             claims.AddRange(user.Roles.Select(role => new Claim(ClaimTypes.Role, role.RoleName)));
 
             var token = new JwtSecurityToken(
