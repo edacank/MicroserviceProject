@@ -14,6 +14,7 @@ namespace UserService.Models
         public int RoleId { get; set; } // Role için Foreign Key
        public Role Role { get; set; } // Navigation Property
         public List<string> Roles { get; set; }  // Birden fazla rol olmalı
-        public ICollection<User> Users { get; set; } // Role ait kullanıcılar
+        
+       
     }
 }
