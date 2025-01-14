@@ -62,22 +62,50 @@ namespace UserService.Controllers
         }
 
         // 4. Kullanıcı Güncelleme
+
+
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateUser(int id, [FromBody] User updatedUser)
         {
-            var user = await _context.Users.FindAsync(id);
-            if (user == null) return NotFound("Kullanıcı bulunamadı.");
+            var user = await _context.Users
+                .Include(u => u.UserRoles) // UserRoles ile birlikte yükleme
+                .ThenInclude(ur => ur.Role) // Role ile birlikte yükleme
+                .FirstOrDefaultAsync(u => u.UserId == id);
 
+            if (user == null)
+                return NotFound("Kullanıcı bulunamadı.");
+
+            // Kullanıcı bilgilerini güncelle
             user.UserName = updatedUser.UserName;
-            user.Role = updatedUser.Role;
+            user.FirstName = updatedUser.FirstName;
+            user.LastName = updatedUser.LastName;
+            user.Email = updatedUser.Email;
+
             if (!string.IsNullOrEmpty(updatedUser.PasswordHash))
             {
                 user.PasswordHash = BCrypt.Net.BCrypt.HashPassword(updatedUser.PasswordHash);
             }
 
+            // Kullanıcı rollerini güncelle
+            var existingRoleIds = user.UserRoles.Select(ur => ur.RoleId).ToList();
+            var updatedRoleIds = updatedUser.UserRoles.Select(ur => ur.RoleId).ToList();
+
+            // Yeni eklenen roller
+            var rolesToAdd = updatedRoleIds.Except(existingRoleIds)
+                .Select(roleId => new UserRole { UserId = user.UserId, RoleId = roleId });
+            _context.UserRoles.AddRange(rolesToAdd);
+
+            // Kaldırılması gereken roller
+            var rolesToRemove = user.UserRoles.Where(ur => !updatedRoleIds.Contains(ur.RoleId)).ToList();
+            _context.UserRoles.RemoveRange(rolesToRemove);
+
             await _context.SaveChangesAsync();
             return Ok("Kullanıcı güncellendi.");
         }
+
+
+
+
 
         // 5. Kullanıcı Silme
         [HttpDelete("{id}")]
@@ -98,10 +126,10 @@ namespace UserService.Controllers
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
             var claims = new List<Claim>
-            {
-            new Claim(ClaimTypes.Name, user.UserName)
-            };
-            claims.AddRange(user.Roles.Select(role => new Claim(ClaimTypes.Role, role.RoleName)));
+    {
+        new Claim(ClaimTypes.Name, user.UserName)
+    };
+            claims.AddRange(user.UserRoles.Select(ur => new Claim(ClaimTypes.Role, ur.Role.Name)));
 
             var token = new JwtSecurityToken(
                 issuer: "yourdomain.com",

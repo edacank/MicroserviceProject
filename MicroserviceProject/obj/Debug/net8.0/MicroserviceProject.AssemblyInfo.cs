@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MicroserviceProject")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8ca32143b3e7c8600b2f3e49b23536668865f961")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8517693f0191f5ca575b909ea2a7abfa898c15d0")]
 [assembly: System.Reflection.AssemblyProductAttribute("MicroserviceProject")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MicroserviceProject")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
