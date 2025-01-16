@@ -3,6 +3,19 @@ using UserService.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// CORS yapýlandýrmasýný ekleyin
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll",
+        policy =>
+        {
+            policy.AllowAnyOrigin()    // Tüm origin'lere izin verir
+                  .AllowAnyMethod()    // Tüm HTTP metodlarýna izin verir
+                  .AllowAnyHeader();   // Tüm baþlýklara izin verir
+        });
+});
+
+
 // Add services to the container.
 
 builder.Services.AddControllers();

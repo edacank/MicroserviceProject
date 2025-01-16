@@ -4,8 +4,8 @@
     {
         public int Id { get; set; }
         public int CustomerId { get; set; }
-        public string Note { get; set; }
-        public DateTime CreatedAt { get; set; } = DateTime.Now;
+        public string CustomerNotes { get; set; }
+        //public DateTime CreatedAt { get; set; } = DateTime.Now;
         public Customer Customer { get; set; }
     }
 }

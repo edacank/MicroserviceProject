@@ -19,13 +19,13 @@ namespace CustomerService.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Customer>>> GetCustomers()
         {
-            return await _context.Customers.Include(c => c.Notes).ToListAsync();
+            return await _context.Customers.Include(c => c.CustomerNotes).ToListAsync();
         }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<Customer>> GetCustomer(int id)
         {
-            var customer = await _context.Customers.Include(c => c.Notes).FirstOrDefaultAsync(c => c.Id == id);
+            var customer = await _context.Customers.Include(c => c.CustomerNotes).FirstOrDefaultAsync(c => c.Id == id);
             if (customer == null) return NotFound();
             return customer;
         }

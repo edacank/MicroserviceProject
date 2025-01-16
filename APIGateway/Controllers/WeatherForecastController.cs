@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace MicroserviceProject.Controllers
+namespace APIGateway.Controllers
 {
     [ApiController]
     [Route("[controller]")]
